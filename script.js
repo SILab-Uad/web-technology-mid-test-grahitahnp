@@ -19,12 +19,11 @@ const generatePassword = (length, options) => {
     let password = "";
     for (let i = 0; i < length; i++) {
         const randomIndex = Math.floor(Math.random() * charSet.length);
-        password += charSet[randomIndex]; }
-    
+        password += charSet[randomIndex];
+    }
+
     return password;
 };
-
-
 
 // TODO: Add event listener to the button to call generatePassword and display the output
 document.getElementById("generateButton").addEventListener("click", () => {
